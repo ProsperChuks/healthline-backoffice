@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Add Product - Healthline Dashboard</title>
+    <meta property="og:title" content="Add Product - Healthline Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./product.js"></script>
+    <div>
+      <link href="./newproduct.css" rel="stylesheet" />
+
+      <div class="newproduct-container">
+        <div class="newproduct-desktop32">
+          <div class="newproduct-frame1171276798">
+            <div class="newproduct-menu">
+              <a href="dashboard.html" class="newproduct-navlink">
+                <div class="newproduct-frame1171274932">
+                  <div class="newproduct-element3">
+                    <div class="newproduct-vuesaxlinearelement3">
+                      <div class="newproduct-element31">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-24p.svg"
+                          class="newproduct-vector"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-z5ua.svg"
+                          class="newproduct-vector01"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-q6cm.svg"
+                          class="newproduct-vector02"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-g4e.svg"
+                          class="newproduct-vector03"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="newproduct-text"><span>Dashboard</span></span>
+                </div>
+              </a>
+              <a href="products.html" class="newproduct-navlink1">
+                <div class="newproduct-frame1171275055">
+                  <div class="newproduct-bag2">
+                    <div class="newproduct-vuesaxlinearbag2">
+                      <div class="newproduct-bag21">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-hz7i.svg"
+                          class="newproduct-vector04"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-q6cm.svg"
+                          class="newproduct-vector05"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-a19d.svg"
+                          class="newproduct-vector06"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-8os.svg"
+                          class="newproduct-vector07"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="newproduct-text02"><span>Products</span></span>
+                </div>
+              </a>
+              <a href="orders.html" class="newproduct-navlink2">
+                <div class="newproduct-frame1171275051">
+                  <div class="newproduct-bag22">
+                    <div class="newproduct-vuesaxlinearbag21">
+                      <div class="newproduct-bag23">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-pdgh.svg"
+                          class="newproduct-vector08"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-fjw.svg"
+                          class="newproduct-vector09"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-b1np.svg"
+                          class="newproduct-vector10"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-95c9.svg"
+                          class="newproduct-vector11"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="newproduct-text04"><span>Orders</span></span>
+                </div>
+              </a>
+              <a href="message.html" class="newproduct-navlink3">
+                <div class="newproduct-frame1171275050">
+                  <div class="newproduct-messagetext">
+                    <div class="newproduct-vuesaxoutlinemessagetext">
+                      <div class="newproduct-messagetext1">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori322-3ndo.svg"
+                          class="newproduct-vector12"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori560-qkdd.svg"
+                          class="newproduct-vector13"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori560-ymwf.svg"
+                          class="newproduct-vector14"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="newproduct-text06"><span>Messages</span></span>
+                </div>
+              </a>
+              <a href="blog.html" class="newproduct-navlink4">
+                <div class="newproduct-frame1171275053">
+                  <img
+                    alt="jamwriteI346"
+                    src="public/external/jamwritei346-4o5c.svg"
+                    class="newproduct-jamwrite"
+                  />
+                  <span class="newproduct-text08"><span>Blog</span></span>
+                </div>
+              </a>
+              <a href="settings.html" class="newproduct-navlink5">
+                <div class="newproduct-frame1171275054">
+                  <img
+                    alt="fluentsettings28regularI346"
+                    src="public/external/fluentsettings28regulari346-3jd.svg"
+                    class="newproduct-fluentsettings28regular"
+                  />
+                  <span class="newproduct-text10"><span>Settings</span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="newproduct-frame1171276799">
+            <div class="newproduct-frame8">
+              <img
+                alt="Frame8I1079"
+                src="public/external/frame8i310-hgb.svg"
+                class="newproduct-frame81"
+              />
+            </div>
+            <div class="newproduct-notifications">
+              <img
+                alt="notificationsI1079"
+                src="public/external/notificationsi346-5cvk.svg"
+                class="newproduct-notifications1"
+              />
+            </div>
+            <div
+              data-thq="thq-dropdown"
+              class="newproduct-thq-dropdown list-item"
+            >
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="newproduct-dropdown-toggle"
+              >
+                <div class="newproduct-frame1171276796">
+                  <img
+                    alt="bipersonI310"
+                    src="public/external/bipersoni310-qxe.svg"
+                    class="newproduct-biperson"
+                  />
+                </div>
+                <span class="newproduct-text12">
+                  <span>&nbsp;<span data-username style="text-transform: capitalize;">loading... </span>&nbsp;&nbsp;</span>
+                  <br />
+                </span>
+                <div
+                  data-thq="thq-dropdown-arrow"
+                  class="newproduct-dropdown-arrow"
+                >
+                  <img
+                    alt="menudownI310"
+                    src="public/external/menudowni310-zmo.svg"
+                    class="newproduct-menudown"
+                  />
+                </div>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="newproduct-dropdown-list">
+                <li
+                  data-thq="thq-dropdown"
+                  class="newproduct-dropdown list-item"
+                >
+                  <a href="settings.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="newproduct-dropdown-toggle1"
+                    >
+                      <img
+                        alt="fluentsettings28regularI310"
+                        src="public/external/fluentsettings28regulari310-h7hd.svg"
+                        class="newproduct-fluentsettings28regular1"
+                      />
+                      <span class="newproduct-menu-item">
+                        <span>&nbsp; &nbsp;Settings</span>
+                        <br />
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li
+                  data-thq="thq-dropdown"
+                  class="newproduct-dropdown1 list-item"
+                >
+                  <a href="index.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="newproduct-dropdown-toggle2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="newproduct-icon">
+                        <path
+                          d="M768 640v-128h-320v-128h320v-128l192 192zM704 576v256h-320v192l-384-192v-832h704v320h-64v-256h-512l256 128v576h256v-192z"
+                        ></path>
+                      </svg>
+                      <span class="newproduct-menu-item1">
+                        &nbsp; &nbsp;Log Out
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="newproduct-frame1171276823">
+            <div class="newproduct-frame1171276819">
+              <div class="newproduct-frame1171276800">
+                <span class="newproduct-text17">
+                  <span>Welcome Back,<span data-username style="text-transform: capitalize;">loading...</span> </span>
+                </span>
+              </div>
+            </div>
+            <form id="addProduct" class="newproduct-frame1171276866">
+              <div class="newproduct-frame44975">
+                <span class="newproduct-text19"><span>New Product</span></span>
+                <div class="newproduct-frame1171277079">
+                  <div class="newproduct-frame44969">
+                    <div class="newproduct-frame44967">
+                      <a href="products.html" style="cursor: pointer;" class="newproduct-text21"><span>Cancel</span></a>
+                    </div>
+                  </div>
+                  <div class="newproduct-frame44970">
+                    <div class="newproduct-frame449671">
+                      <button class="newproduct-text23" style="cursor: pointer;"><span>Save</span></button>
+                    </div>
+                  </div>
+                </div>
+                <input type="text" placeholder="placeholder" class="input" />
+              </div>
+              <div id="resultMessage"></div>
+              <div class="newproduct-frame1171276822">
+                <div class="newproduct-frame1171277068">
+                  <div class="newproduct-circularbtn image-upload">
+                    <label for="file-input">
+                      <span>+</span>
+                      <br />
+                    </label>
+                    <input
+                      type="file"
+                      id="file-input"
+                      accept="image/*"
+                      class="newproduct-textinput1"
+                    /><img id="imagePreview" src="" width="400" height="400" alt="Uploaded Image Preview" style="display: none;">
+                  </div>
+                </div>
+                <div class="newproduct-frame1171277072">
+                  <div class="newproduct-frame1171277070">
+                    <span class="newproduct-text28">
+                      <span>Drug Name:</span>
+                    </span>
+                    <input type="text" name="drug_name" class="newproduct-textinput2" />
+                  </div>
+                  <div class="newproduct-frame1171277075">
+                    <span class="newproduct-text30">
+                      <span>Short Description</span>
+                    </span>
+                    <textarea name="desc" class="newproduct-textarea"></textarea>
+                  </div>
+                  <div class="newproduct-frame1171277074">
+                    <span class="newproduct-text32"><span>Price</span></span>
+                    <input type="number" name="price" class="newproduct-textinput3" />
+                  </div>
+                  <div class="newproduct-frame1171277071">
+                    <span class="newproduct-text34"><span>Category</span></span>
+                    <input type="text" name="category" class="newproduct-textinput4" />
+                  </div>
+                  <!-- <div class="newproduct-frame11712770721">
+                    <span class="newproduct-text36"><span>Category</span></span>
+                    <input type="text" class="newproduct-textinput5" />
+                  </div> -->
+                  <div class="newproduct-frame1171277073">
+                    <span class="newproduct-text38">
+                      <span>Presentation</span>
+                    </span>
+                    <input type="text" name="presentation" class="newproduct-textinput6" />
+                  </div>
+                  <div class="newproduct-frame1171277076">
+                    <span class="newproduct-text40">
+                      <span>Composition</span>
+                    </span>
+                    <textarea class="newproduct-textarea1" name=composition"></textarea>
+                  </div>
+                  <div class="newproduct-frame1171277077">
+                    <span class="newproduct-text42">
+                      <span>Indications</span>
+                    </span>
+                    <textarea class="newproduct-textarea2" name="indications"></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

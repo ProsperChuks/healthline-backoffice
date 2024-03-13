@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Orders - Healthline Dashboard</title>
+    <meta property="og:title" content="Orders - Healthline Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./orders.js"></script>
+    <div>
+      <link href="./orders.css" rel="stylesheet" />
+
+      <div class="orders-container">
+        <div class="orders-desktop16">
+          <div class="orders-frame1171276798">
+            <div class="orders-menu">
+              <a href="dashboard.html" class="orders-navlink">
+                <div class="orders-frame1171274932">
+                  <div class="orders-element3">
+                    <div class="orders-vuesaxlinearelement3">
+                      <div class="orders-element31">
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-6kbn.svg"
+                          class="orders-vector"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-e4js.svg"
+                          class="orders-vector01"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-ki1l.svg"
+                          class="orders-vector02"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-jquc.svg"
+                          class="orders-vector03"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="orders-text"><span>Dashboard</span></span>
+                </div>
+              </a>
+              <a href="products.html" class="orders-navlink1">
+                <div class="orders-frame1171275055">
+                  <div class="orders-bag2">
+                    <div class="orders-vuesaxlinearbag2">
+                      <div class="orders-bag21">
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-mujr.svg"
+                          class="orders-vector04"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-rp2s.svg"
+                          class="orders-vector05"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-763v.svg"
+                          class="orders-vector06"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-sjik.svg"
+                          class="orders-vector07"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="orders-text002"><span>Products</span></span>
+                </div>
+              </a>
+              <a href="orders.html" class="orders-navlink2">
+                <div class="orders-frame1171275051">
+                  <div class="orders-bag22">
+                    <div class="orders-vuesaxlinearbag21">
+                      <div class="orders-bag23">
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-3vj.svg"
+                          class="orders-vector08"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-623c.svg"
+                          class="orders-vector09"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-mcqiq.svg"
+                          class="orders-vector10"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-rpl.svg"
+                          class="orders-vector11"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="orders-text004"><span>Orders</span></span>
+                </div>
+              </a>
+              <a href="message.html" class="orders-navlink3">
+                <div class="orders-frame1171275050">
+                  <div class="orders-messagetext">
+                    <div class="orders-vuesaxoutlinemessagetext">
+                      <div class="orders-messagetext1">
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-55id.svg"
+                          class="orders-vector12"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-wfv.svg"
+                          class="orders-vector13"
+                        />
+                        <img
+                          alt="VectorI266"
+                          src="public/external/vectori266-j8g.svg"
+                          class="orders-vector14"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="orders-text006"><span>Messages</span></span>
+                </div>
+              </a>
+              <a href="blog.html" class="orders-navlink4">
+                <div class="orders-frame1171275053">
+                  <img
+                    alt="jamwriteI266"
+                    src="public/external/jamwritei266-9mk.svg"
+                    class="orders-jamwrite"
+                  />
+                  <span class="orders-text008"><span>Blog</span></span>
+                </div>
+              </a>
+              <a href="settings.html" class="orders-navlink5">
+                <div class="orders-frame1171275054">
+                  <img
+                    alt="fluentsettings28regularI266"
+                    src="public/external/fluentsettings28regulari266-v93u.svg"
+                    class="orders-fluentsettings28regular"
+                  />
+                  <span class="orders-text010"><span>Settings</span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="orders-frame1171276799">
+            <div class="orders-frame8">
+              <img
+                alt="Frame82793"
+                src="public/external/frame82793-clol.svg"
+                class="orders-frame81"
+              />
+            </div>
+            <div class="orders-notifications">
+              <img
+                alt="notifications2712"
+                src="public/external/notifications2712-x5fp.svg"
+                class="orders-notifications1"
+              />
+            </div>
+            <div data-thq="thq-dropdown" class="orders-thq-dropdown list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="orders-dropdown-toggle"
+              >
+                <div class="orders-frame1171276796">
+                  <img
+                    alt="bipersonI310"
+                    src="public/external/bipersoni310-qxe.svg"
+                    class="orders-biperson"
+                  />
+                </div>
+                <span class="orders-text012">
+                  <span>&nbsp;<span data-username style="text-transform: capitalize;">loading... </span>&nbsp;&nbsp;</span>
+                  <br />
+                </span>
+                <div
+                  data-thq="thq-dropdown-arrow"
+                  class="orders-dropdown-arrow"
+                >
+                  <img
+                    alt="menudownI310"
+                    src="public/external/menudowni310-zmo.svg"
+                    class="orders-menudown"
+                  />
+                </div>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="orders-dropdown-list">
+                <li data-thq="thq-dropdown" class="orders-dropdown list-item">
+                  <a href="settings.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="orders-dropdown-toggle1"
+                    >
+                      <img
+                        alt="fluentsettings28regularI310"
+                        src="public/external/fluentsettings28regulari310-h7hd.svg"
+                        class="orders-fluentsettings28regular1"
+                      />
+                      <span class="orders-menu-item">
+                        <span>&nbsp; &nbsp;Settings</span>
+                        <br />
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="orders-dropdown1 list-item">
+                  <a href="index.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="orders-dropdown-toggle2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="orders-icon">
+                        <path
+                          d="M768 640v-128h-320v-128h320v-128l192 192zM704 576v256h-320v192l-384-192v-832h704v320h-64v-256h-512l256 128v576h256v-192z"
+                        ></path>
+                      </svg>
+                      <span class="orders-menu-item1">
+                        &nbsp; &nbsp;Log Out
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="orders-frame1171276823">
+            <div class="orders-frame1171276819">
+              <div class="orders-frame1171276800">
+                <span class="orders-text017">
+                  <span>Welcome Back,<span data-username style="text-transform: capitalize;">loading...</span> </span>
+                </span>
+              </div>
+            </div>
+            <div class="orders-frame1171276866">
+              <div class="orders-frame44975">
+                <span class="orders-text019"><span>All Orders</span></span>
+              </div>
+              <div class="orders-container1">
+                <div data-thq="thq-dropdown" class="orders-thq-dropdown1">
+                  <div
+                    data-thq="thq-dropdown-toggle"
+                    class="orders-dropdown-toggle3"
+                  >
+                    <span class="orders-text021">
+                      <span>Filter by Status&nbsp; &nbsp;</span>
+                      <br />
+                    </span>
+                    <svg viewBox="0 0 1024 1024" class="orders-icon2">
+                      <path
+                        d="M225.835 414.165l256 256c16.683 16.683 43.691 16.683 60.331 0l256-256c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                      ></path>
+                    </svg>
+                    <div
+                      data-thq="thq-dropdown-arrow"
+                      class="orders-dropdown-arrow1"
+                    ></div>
+                  </div>
+                  <ul
+                    data-thq="thq-dropdown-list"
+                    class="orders-dropdown-list1"
+                  >
+                    <li
+                      data-thq="thq-dropdown"
+                      class="orders-dropdown2 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="orders-dropdown-toggle4"
+                      >
+                        <span class="orders-text024">Ongoing</span>
+                      </div>
+                    </li>
+                    <li
+                      data-thq="thq-dropdown"
+                      class="orders-dropdown3 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        class="orders-dropdown-toggle5"
+                      >
+                        <span class="orders-text025">Completed</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="orders-frame44841">
+                  <div class="orders-frame110of30">
+                    <span class="orders-text027">
+                      <span>&nbsp; 1 - 10 of</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <div class="orders-frame44840">
+                    <img
+                      alt="CaretRight2793"
+                      src="public/external/caretright2793-9y6.svg"
+                      class="orders-caret-right"
+                    />
+                    <img
+                      alt="CaretRight2793"
+                      src="public/external/caretright2793-t5fh.svg"
+                      class="orders-caret-right1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <script>
+                  function truncateText(text, maxLength, ending = "...") {
+                    if (text.length > maxLength) {
+                        return text.substring(0, maxLength) + ending;
+                    } else {
+                        return text;
+                    }
+                  }
+              </script>
+              <div class="orders-frame1171276822">
+                <!-- <div class="orders-frame44867">
+                  <div class="orders-frame1171276869">
+                    <div class="orders-frame1171276867">
+                      <div class="orders-frame1171276868">
+                        <div class="orders-allorders">
+                          <span class="orders-text030">
+                            <span>All orders</span>
+                          </span>
+                        </div>
+                        <div class="orders-rectangle206031">
+                          <img
+                            alt="Rectangle206031I342"
+                            src="public/external/rectangle206031i342-94nc-200h.png"
+                            class="orders-rectangle2060311"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="orders-frame11712768681">
+                      <div class="orders-frame11712768682">
+                        <div class="orders-allorders1">
+                          <span class="orders-text032">
+                            <span>Completed Orders</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orders-frame44974"></div>
+                </div> -->
+                <div class="orders-frame1171276821">
+                  <div class="orders-frame1171276809">
+                    <div class="orders-frame1171276807">
+                      <div class="orders-frame1171276803">
+                        <span class="orders-text034">
+                          <span>Full name</span>
+                        </span>
+                      </div>
+                      <div class="orders-frame1171276804">
+                        <span class="orders-text036">
+                          <span>Email address</span>
+                        </span>
+                      </div>
+                      <div class="orders-frame11712768071">
+                        <span class="orders-text038">
+                          <span>Phone Number</span>
+                        </span>
+                      </div>
+                      <div class="orders-frame1171276805">
+                        <span class="orders-text040">
+                          <span>Location</span>
+                        </span>
+                      </div>
+                      <div class="orders-frame1171276806">
+                        <span class="orders-text042">
+                          <span>Prescription</span>
+                        </span>
+                      </div>
+                      <div class="orders-frame1171276808">
+                        <span class="orders-text044"><span>Price</span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orders-frame1171276820">
+                    <div class="orders-frame1171276812" id="openModalButton" style="cursor: pointer;">
+                      <div class="orders-frame1171276810">
+                        <div class="orders-frame1171276856">
+                          <span class="orders-text046">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680801">
+                          <div class="orders-frame117127680301">
+                            <span class="orders-text048">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680401">
+                            <span class="orders-text050">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame1171276814">
+                            <span class="orders-text052">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680501">
+                            <span class="orders-text054">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680601">
+                            <span class="orders-text056">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame1171276815">
+                            <span class="orders-text058">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame1171276813">
+                            <img
+                              alt="menudown2662"
+                              src="public/external/menudown2662-9o8.svg"
+                              class="orders-menudown01"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                      <div class="modal-content" style="width: 64%; height: auto; background: white; box-shadow: 0px 5px 40px rgba(28, 31, 36, 0.06); border-radius: 20px; overflow: auto; border: 1px #E0E0E0 solid;">
+                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                        <div style="width: 920px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+                          <div style="width: 920px; height: 91px; border-bottom: 0.50px #9F9E9E solid; justify-content: flex-start; align-items: center; gap: 50px; display: inline-flex">
+                            <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">Prescription</div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                              <div style="justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 70px; height: 70px; padding: 10px; background: #F9F9F9; border-radius: 10px; overflow: hidden; justify-content: center; align-items: center; display: flex">
+                                  <img style="width: 50px; height: 50px" src="./public/external/paracetamol.jpg" />
+                                </div>
+                                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                                  <div style="color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">Paracetamol 500mg</div>
+                                  <div style="color: #202020; font-size: 12px; font-family: Inter; font-weight: 500; line-height: 10.56px; word-wrap: break-word">X2</div>
+                                  <div style="color: #202020; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 14.08px; word-wrap: break-word">N2000</div>
+                                </div>
+                              </div>
+                              <div style="justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 70px; height: 70px; padding: 10px; background: #F9F9F9; border-radius: 10px; overflow: hidden; justify-content: center; align-items: center; display: flex">
+                                  <img style="width: 50px; height: 50px" src="./public/external/paracetamol.jpg" />
+                                </div>
+                                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                                  <div style="color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">Procold 1000mg</div>
+                                  <div style="color: #202020; font-size: 12px; font-family: Inter; font-weight: 500; line-height: 10.56px; word-wrap: break-word">X1</div>
+                                  <div style="color: #202020; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 14.08px; word-wrap: break-word">N500</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="padding-bottom: 16px; border-bottom: 0.50px rgba(0, 0, 0, 0.48) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
+                              <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">Full Name</div>
+                              <div style="width: 745px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">David Brown</div>
+                            </div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
+                              <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">Email Address</div>
+                              <div style="width: 745px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">anthony@gmail.com</div>
+                            </div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
+                              <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">Address</div>
+                              <div style="width: 745px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">112 Loren ipsum dolor sit amet consectetur. Volutpat non sollicitudin</div>
+                            </div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
+                              <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">LGA</div>
+                              <div style="width: 745px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">Ikeja</div>
+                            </div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 50px; display: inline-flex">
+                              <div style="width: 125px; height: 11px; color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">State</div>
+                              <div style="width: 745px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 14.08px; word-wrap: break-word">Lagos</div>
+                            </div>
+                            <div style="height: 63px; justify-content: flex-start; align-items: flex-start; gap: 29px; display: inline-flex">
+                              <div style="color: rgba(32, 32, 32, 0.80); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 12.32px; word-wrap: break-word">Additional Information</div>
+                              <div style="width: 745px; height: 63px; color: #202020; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 21.12px; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur. Volutpat non sollicitudin egestas viverra et mattis. Velit pretium hendrerit vulputate adipiscing. Sed in lorem sit risus nunc maecenas bibendum rhoncus sit. Commodo et quis mi faucibus massa morbi eu.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="width: 930px; height: 54px; padding: 10px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                          <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div style="width: 212px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: white; justify-content: center; align-items: center; gap: 10px; display: flex">
+                              <div style="width: 28px; height: 28px; padding: 3.50px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 21px; height: 21px; background: #202020"></div>
+                              </div>
+                              <div style="color: #202020; font-size: 18px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">+23480123456789</div>
+                            </div>
+                            <div style="width: 180px; height: 50px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: white; border-radius: 60px; border: 1px #202020 solid; justify-content: center; align-items: center; gap: 10px; display: flex">
+                              <div style="color: #202020; font-size: 18px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Send Email</div>
+                            </div>
+                            <div style="width: 180px; height: 50px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: white; border-radius: 60px; border: 1px #F11919 solid; justify-content: center; align-items: center; gap: 10px; display: flex">
+                              <div style="color: #F11919; font-size: 18px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Cancel Order</div>
+                            </div>
+                            <div style="width: 180px; height: 50px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: white; border-radius: 60px; border: 1px #0E9D1D solid; justify-content: center; align-items: center; gap: 10px; display: flex">
+                              <div style="color: #0E9D1D; font-size: 18px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Mark Complete</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="orders-frame117127681501">
+                      <div class="orders-frame11712768101">
+                        <div class="orders-frame117127685601">
+                          <span class="orders-text060">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680802">
+                          <div class="orders-frame117127680302">
+                            <span class="orders-text062">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680402">
+                            <span class="orders-text064">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681401">
+                            <span class="orders-text066">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680502">
+                            <span class="orders-text068">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680602">
+                            <span class="orders-text070">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681502">
+                            <span class="orders-text072">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681301">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-jgk.svg"
+                              class="orders-menudown02"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame1171276811">
+                        <div class="orders-frame117127685602">
+                          <span class="orders-text074">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680803">
+                          <div class="orders-frame117127680303">
+                            <span class="orders-text076">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680403">
+                            <span class="orders-text078">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681402">
+                            <span class="orders-text080">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680503">
+                            <span class="orders-text082">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680603">
+                            <span class="orders-text084">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681503">
+                            <span class="orders-text086">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681302">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-0mem.svg"
+                              class="orders-menudown03"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame11712768121">
+                        <div class="orders-frame117127685603">
+                          <span class="orders-text088">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680804">
+                          <div class="orders-frame117127680304">
+                            <span class="orders-text090">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680404">
+                            <span class="orders-text092">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681403">
+                            <span class="orders-text094">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680504">
+                            <span class="orders-text096">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680604">
+                            <span class="orders-text098">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681504">
+                            <span class="orders-text100">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681303">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-ajz7h.svg"
+                              class="orders-menudown04"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame117127681304">
+                        <div class="orders-frame117127685604">
+                          <span class="orders-text102">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680805">
+                          <div class="orders-frame117127680305">
+                            <span class="orders-text104">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680405">
+                            <span class="orders-text106">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681404">
+                            <span class="orders-text108">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680505">
+                            <span class="orders-text110">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680605">
+                            <span class="orders-text112">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681505">
+                            <span class="orders-text114">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681305">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-3x1q.svg"
+                              class="orders-menudown05"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame117127681405">
+                        <div class="orders-frame117127685605">
+                          <span class="orders-text116">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680806">
+                          <div class="orders-frame117127680306">
+                            <span class="orders-text118">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680406">
+                            <span class="orders-text120">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681406">
+                            <span class="orders-text122">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680506">
+                            <span class="orders-text124">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680606">
+                            <span class="orders-text126">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681506">
+                            <span class="orders-text128">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681306">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-o2uv.svg"
+                              class="orders-menudown06"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame117127681507">
+                        <div class="orders-frame117127685606">
+                          <span class="orders-text130">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680807">
+                          <div class="orders-frame117127680307">
+                            <span class="orders-text132">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680407">
+                            <span class="orders-text134">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681407">
+                            <span class="orders-text136">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680507">
+                            <span class="orders-text138">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680607">
+                            <span class="orders-text140">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681508">
+                            <span class="orders-text142">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681307">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-5vrc.svg"
+                              class="orders-menudown07"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame1171276816">
+                        <div class="orders-frame117127685607">
+                          <span class="orders-text144">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680808">
+                          <div class="orders-frame117127680308">
+                            <span class="orders-text146">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680408">
+                            <span class="orders-text148">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681408">
+                            <span class="orders-text150">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680508">
+                            <span class="orders-text152">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680608">
+                            <span class="orders-text154">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681509">
+                            <span class="orders-text156">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681308">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-r6y.svg"
+                              class="orders-menudown08"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame1171276817">
+                        <div class="orders-frame117127685608">
+                          <span class="orders-text158">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680809">
+                          <div class="orders-frame117127680309">
+                            <span class="orders-text160">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680409">
+                            <span class="orders-text162">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681409">
+                            <span class="orders-text164">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680509">
+                            <span class="orders-text166">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680609">
+                            <span class="orders-text168">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681510">
+                            <span class="orders-text170">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681309">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-dk2.svg"
+                              class="orders-menudown09"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orders-frame1171276818">
+                        <div class="orders-frame117127685609">
+                          <span class="orders-text172">
+                            <span>12:38pm</span>
+                          </span>
+                        </div>
+                        <div class="orders-frame117127680810">
+                          <div class="orders-frame117127680310">
+                            <span class="orders-text174">
+                              <span>David Brown</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680410">
+                            <span class="orders-text176">
+                              <span>david@gmail.com</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681410">
+                            <span class="orders-text178">
+                              <span>080123456789</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680510">
+                            <span class="orders-text180">
+                              <span>IKeja, Lagos</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127680610">
+                            <span class="orders-text182">
+                              <span>2x Paracetamol 500g, 1x Procold Extra</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681511">
+                            <span class="orders-text184">
+                              <span>3,000.00</span>
+                            </span>
+                          </div>
+                          <div class="orders-frame117127681310">
+                            <img
+                              alt="menudownI279"
+                              src="public/external/menudowni279-emi.svg"
+                              class="orders-menudown10"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

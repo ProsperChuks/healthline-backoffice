@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Message - Healthline Dashboard</title>
+    <meta property="og:title" content="Message - Healthline Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./message.css" rel="stylesheet" />
+
+      <div class="message-container">
+        <div class="message-dashboard">
+          <div class="message-frame1171276798">
+            <div class="message-menu">
+              <a href="dashboard.html" class="message-navlink">
+                <div class="message-frame1171274932">
+                  <div class="message-element3">
+                    <div class="message-vuesaxlinearelement3">
+                      <div class="message-element31">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-24p.svg"
+                          class="message-vector"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-z5ua.svg"
+                          class="message-vector01"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-q6cm.svg"
+                          class="message-vector02"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-g4e.svg"
+                          class="message-vector03"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="message-text"><span>Dashboard</span></span>
+                </div>
+              </a>
+              <a href="products.html" class="message-navlink1">
+                <div class="message-frame1171275055">
+                  <div class="message-bag2">
+                    <div class="message-vuesaxlinearbag2">
+                      <div class="message-bag21">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-hz7i.svg"
+                          class="message-vector04"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-kivo.svg"
+                          class="message-vector05"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-a19d.svg"
+                          class="message-vector06"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-8os.svg"
+                          class="message-vector07"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="message-text002"><span>Products</span></span>
+                </div>
+              </a>
+              <a href="orders.html" class="message-navlink2">
+                <div class="message-frame1171275051">
+                  <div class="message-bag22">
+                    <div class="message-vuesaxlinearbag21">
+                      <div class="message-bag23">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-pdgh.svg"
+                          class="message-vector08"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-fjw.svg"
+                          class="message-vector09"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-b1np.svg"
+                          class="message-vector10"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-95c9.svg"
+                          class="message-vector11"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="message-text004"><span>Orders</span></span>
+                </div>
+              </a>
+              <a href="message.html" class="message-navlink3">
+                <div class="message-frame1171275050">
+                  <div class="message-messagetext">
+                    <div class="message-vuesaxoutlinemessagetext">
+                      <div class="message-messagetext1">
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-9nuf.svg"
+                          class="message-vector12"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-fkdm.svg"
+                          class="message-vector13"
+                        />
+                        <img
+                          alt="VectorI346"
+                          src="public/external/vectori346-worx.svg"
+                          class="message-vector14"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span class="message-text006"><span>Messages</span></span>
+                </div>
+              </a>
+              <a href="blog.html" class="message-navlink4">
+                <div class="message-frame1171275053">
+                  <img
+                    alt="jamwriteI346"
+                    src="public/external/jamwritei346-4o5c.svg"
+                    class="message-jamwrite"
+                  />
+                  <span class="message-text008"><span>Blog</span></span>
+                </div>
+              </a>
+              <a href="settings.html" class="message-navlink5">
+                <div class="message-frame1171275054">
+                  <img
+                    alt="fluentsettings28regularI346"
+                    src="public/external/fluentsettings28regulari346-3jd.svg"
+                    class="message-fluentsettings28regular"
+                  />
+                  <span class="message-text010"><span>Settings</span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="message-frame1171276799">
+            <div class="message-frame8">
+              <img
+                alt="Frame8I346"
+                src="public/external/frame8i346-szmv.svg"
+                class="message-frame81"
+              />
+            </div>
+            <div class="message-notifications">
+              <img
+                alt="notificationsI346"
+                src="public/external/notificationsi346-5cvk.svg"
+                class="message-notifications1"
+              />
+            </div>
+            <div data-thq="thq-dropdown" class="message-thq-dropdown list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                class="message-dropdown-toggle"
+              >
+                <div class="message-frame1171276796">
+                  <img
+                    alt="bipersonI310"
+                    src="public/external/bipersoni310-qxe.svg"
+                    class="message-biperson"
+                  />
+                </div>
+                <span class="message-text012">
+                  <span>&nbsp; Anthony&nbsp;&nbsp;</span>
+                  <br />
+                </span>
+                <div
+                  data-thq="thq-dropdown-arrow"
+                  class="message-dropdown-arrow"
+                >
+                  <img
+                    alt="menudownI310"
+                    src="public/external/menudowni310-zmo.svg"
+                    class="message-menudown"
+                  />
+                </div>
+              </div>
+              <ul data-thq="thq-dropdown-list" class="message-dropdown-list">
+                <li data-thq="thq-dropdown" class="message-dropdown list-item">
+                  <a href="settings.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="message-dropdown-toggle1"
+                    >
+                      <img
+                        alt="fluentsettings28regularI310"
+                        src="public/external/fluentsettings28regulari310-h7hd.svg"
+                        class="message-fluentsettings28regular1"
+                      />
+                      <span class="message-menu-item">
+                        <span>&nbsp; &nbsp;Settings</span>
+                        <br />
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li data-thq="thq-dropdown" class="message-dropdown1 list-item">
+                  <a href="index.html">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="message-dropdown-toggle2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="message-icon">
+                        <path
+                          d="M768 640v-128h-320v-128h320v-128l192 192zM704 576v256h-320v192l-384-192v-832h704v320h-64v-256h-512l256 128v576h256v-192z"
+                        ></path>
+                      </svg>
+                      <span class="message-menu-item1">
+                        &nbsp; &nbsp;Log Out
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="message-frame1171276819">
+            <div class="message-frame1171276800">
+              <span class="message-text017">
+                <span>Welcome Back, Anthony</span>
+              </span>
+            </div>
+          </div>
+          <div class="message-frame44867">
+            <div class="message-frame44834">
+              <span class="message-text019"><span>Messages</span></span>
+            </div>
+            <div class="message-frame44974">
+              <div class="message-frame44968">
+                <div class="message-frame44967">
+                  <span class="message-text021">
+                    <span>Filter by Status: All</span>
+                  </span>
+                </div>
+              </div>
+              <div class="message-frame44841">
+                <div class="message-frame110of30">
+                  <span class="message-text023"><span>1 - 10 of 30</span></span>
+                </div>
+                <div class="message-frame44840"></div>
+              </div>
+            </div>
+          </div>
+          <div class="message-frame1171275842">
+            <div class="message-frame1171275843">
+              <div class="message-frame1171275844">
+                <div class="message-frame1171275846">
+                  <span class="message-text025">R</span>
+                </div>
+                <div class="message-frame11712750501">
+                  <span class="message-text026">
+                    <span>Ronal Richards</span>
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="more3463"
+                src="public/external/more3463-cksp.svg"
+                class="message-more"
+              />
+            </div>
+            <div class="message-frame1171275852">
+              <div class="message-frame1171275855">
+                <div class="message-circularbtn image-upload">
+                  <label for="file-input">
+                    <span>+</span>
+                    <br />
+                  </label>
+                  <input
+                    type="file"
+                    id="file-input"
+                    class="message-textinput"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    placeholder="Lorem ipsum dolor sit"
+                    class="textfocus"
+                  ></textarea>
+                </div>
+              </div>
+              <button class="message-button">
+                <span class="message-text031"><span>Send</span></span>
+              </button>
+            </div>
+            <div class="message-personchat1">
+              <div class="message-frame1171276863">
+                <span class="message-text033">R</span>
+              </div>
+              <div class="message-frame1171275849">
+                <div class="message-frame1171275847">
+                  <span class="message-text034">
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
+                      sit pretium blandit. Lorem ipsum dolor sit amet
+                      consectetur.
+                    </span>
+                  </span>
+                </div>
+                <span class="message-text036"><span>2 min</span></span>
+              </div>
+            </div>
+            <div class="message-personchat2">
+              <div class="message-frame11712768631">
+                <span class="message-text038">R</span>
+              </div>
+              <div class="message-frame11712758491">
+                <div class="message-frame11712758471">
+                  <span class="message-text039">
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur. Amet amet
+                    </span>
+                  </span>
+                </div>
+                <span class="message-text041"><span>2 min</span></span>
+              </div>
+            </div>
+            <div class="message-frame11712758492">
+              <div class="message-frame11712758493">
+                <div class="message-frame11712758472">
+                  <span class="message-text043">
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
+                      sit pretium blandit. Lorem ipsum dolor sit amet
+                      consectetur.
+                    </span>
+                  </span>
+                </div>
+                <span class="message-text045"><span>2 min</span></span>
+              </div>
+            </div>
+            <div class="message-frame1171275853">
+              <div class="message-frame11712758494">
+                <div class="message-frame11712758473">
+                  <span class="message-text047">
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
+                      sit pretium blandit. Lorem ipsum dolor sit amet
+                      consectetur.
+                    </span>
+                  </span>
+                </div>
+                <span class="message-text049"><span>2 min</span></span>
+              </div>
+            </div>
+            <div class="message-group1171275066">
+              <img
+                alt="Line1963463"
+                src="public/external/line1963463-m3e.svg"
+                class="message-line196"
+              />
+              <span class="message-text051"><span>Today</span></span>
+              <img
+                alt="Line1973463"
+                src="public/external/line1973463-cw2i.svg"
+                class="message-line197"
+              />
+            </div>
+          </div>
+          <div class="message-frame11712758531">
+            <div class="message-frame1171275845">
+              <img
+                alt="Rectangle205991I346"
+                src="public/external/rectangle205991i346-e2wk-200h.png"
+                class="message-rectangle205991"
+              />
+              <img
+                alt="moreI346"
+                src="public/external/morei346-46zp.svg"
+                class="message-more1"
+              />
+              <div class="message-frame11712758441">
+                <div class="message-frame1171276861">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-trw-200h.png"
+                    class="message-rectangle205593"
+                  />
+                  <span class="message-text053">R</span>
+                </div>
+                <div class="message-frame1171276862">
+                  <div class="message-frame11712750511">
+                    <div class="message-frame117127585201">
+                      <span class="message-text054">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text056"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text058">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group1171274928">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-h524-200h.png"
+                      class="message-ellipse3680"
+                    />
+                    <span class="message-text060">3</span>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="Rectangle206032I346"
+                src="public/external/rectangle206032i346-4lq-200w.png"
+                class="message-rectangle206032"
+              />
+            </div>
+            <div class="message-frame11712758461">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-obec.svg"
+                class="message-more2"
+              />
+              <div class="message-frame11712758442">
+                <div class="message-frame11712768611">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-dmf-200h.png"
+                    class="message-rectangle2055931"
+                  />
+                  <span class="message-text061">R</span>
+                </div>
+                <div class="message-frame11712768621">
+                  <div class="message-frame11712750512">
+                    <div class="message-frame117127585202">
+                      <span class="message-text062">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text064"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text066">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749281">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-o7s-200h.png"
+                      class="message-ellipse36801"
+                    />
+                    <span class="message-text068">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame11712758474">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-roel.svg"
+                class="message-more3"
+              />
+              <div class="message-frame11712758443">
+                <div class="message-frame11712768612">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-i7xg-200h.png"
+                    class="message-rectangle2055932"
+                  />
+                  <span class="message-text069">R</span>
+                </div>
+                <div class="message-frame11712768622">
+                  <div class="message-frame11712750513">
+                    <div class="message-frame117127585203">
+                      <span class="message-text070">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text072"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text074">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749282">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-xeue-200h.png"
+                      class="message-ellipse36802"
+                    />
+                    <span class="message-text076">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame1171275848">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-da6dy.svg"
+                class="message-more4"
+              />
+              <div class="message-frame11712758444">
+                <div class="message-frame11712768613">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-ytll-200h.png"
+                    class="message-rectangle2055933"
+                  />
+                  <span class="message-text077">R</span>
+                </div>
+                <div class="message-frame11712768623">
+                  <div class="message-frame11712750514">
+                    <div class="message-frame117127585204">
+                      <span class="message-text078">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text080"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text082">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749283">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-wz48-200h.png"
+                      class="message-ellipse36803"
+                    />
+                    <span class="message-text084">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame11712758495">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-vabw.svg"
+                class="message-more5"
+              />
+              <div class="message-frame11712758445">
+                <div class="message-frame11712768614">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-ulq-200h.png"
+                    class="message-rectangle2055934"
+                  />
+                  <span class="message-text085">R</span>
+                </div>
+                <div class="message-frame11712768624">
+                  <div class="message-frame11712750515">
+                    <div class="message-frame117127585205">
+                      <span class="message-text086">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text088"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text090">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749284">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-pxjq-200h.png"
+                      class="message-ellipse36804"
+                    />
+                    <span class="message-text092">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame1171275850">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-gj89.svg"
+                class="message-more6"
+              />
+              <div class="message-frame11712758446">
+                <div class="message-frame11712768615">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-eqhg-200h.png"
+                    class="message-rectangle2055935"
+                  />
+                  <span class="message-text093">R</span>
+                </div>
+                <div class="message-frame11712768625">
+                  <div class="message-frame11712750516">
+                    <div class="message-frame117127585206">
+                      <span class="message-text094">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text096"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text098">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749285">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-v31-200h.png"
+                      class="message-ellipse36805"
+                    />
+                    <span class="message-text100">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame1171275851">
+              <img
+                alt="moreI346"
+                src="public/external/morei346-lfm2.svg"
+                class="message-more7"
+              />
+              <div class="message-frame11712758447">
+                <div class="message-frame11712768616">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-6g3-200h.png"
+                    class="message-rectangle2055936"
+                  />
+                  <span class="message-text101">R</span>
+                </div>
+                <div class="message-frame11712768626">
+                  <div class="message-frame11712750517">
+                    <div class="message-frame117127585207">
+                      <span class="message-text102">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text104"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text106">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749286">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-z1w6-200h.png"
+                      class="message-ellipse36806"
+                    />
+                    <span class="message-text108">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-frame117127585208">
+              <div class="message-frame11712758448">
+                <div class="message-frame11712768617">
+                  <img
+                    alt="Rectangle205593I346"
+                    src="public/external/rectangle205593i346-x7eb-200h.png"
+                    class="message-rectangle2055937"
+                  />
+                  <span class="message-text109">R</span>
+                </div>
+                <div class="message-frame11712768627">
+                  <div class="message-frame11712750518">
+                    <div class="message-frame117127585209">
+                      <span class="message-text110">
+                        <span>Ronal Richards</span>
+                      </span>
+                      <span class="message-text112"><span>2 min</span></span>
+                    </div>
+                    <span class="message-text114">
+                      <span>Lorem ipsum dolor sit amet nsectetur...</span>
+                    </span>
+                  </div>
+                  <div class="message-group11712749287">
+                    <img
+                      alt="Ellipse3680I346"
+                      src="public/external/ellipse3680i346-fmdl-200h.png"
+                      class="message-ellipse36807"
+                    />
+                    <span class="message-text116">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message-frame1171275824">
+            <div class="message-container1">
+              <div class="message-frame1171275854">
+                <img
+                  alt="search3463"
+                  src="public/external/search3463-u8rs.svg"
+                  class="message-search"
+                />
+                <input
+                  type="text"
+                  placeholder="Search Messages"
+                  class="message-textinput1"
+                />
+              </div>
+            </div>
+            <img
+              alt="filter3463"
+              src="public/external/filter3463-phrb.svg"
+              class="message-filter"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
