@@ -21,7 +21,7 @@ $(document).ready(function() {
         data: "{\"username\":\""+username+"\", \"name\":\""+name+"\", \"email\":\""+email+"\", \"password\":\""+password+"\"}",
         success: function() {
             alert('Sign Up Successful. Log In')
-            window.location.href = 'index.html'; 
+            window.location.href = 'dashboard.html'; 
         },
         error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling
             console.log('Error: ', jqXHR, textStatus, errorThrown);

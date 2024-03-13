@@ -37,8 +37,36 @@ function fetchProducts() {
     })
 }
 
+function fetchOrders() {
+    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts'
+    $.ajax({
+        url: endpoint,
+        headers: {
+            'Authorization': 'Token ' + token
+        },
+        success: function(productData) {
+            $('[num-orders]').text(Object.keys(productData).length);
+        },
+    })
+}
+
+function fetchCompletedOrders() {
+    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts?completed=1'
+    $.ajax({
+        url: endpoint,
+        headers: {
+            'Authorization': 'Token ' + token
+        },
+        success: function(productData) {
+            $('[num-c-orders]').text(Object.keys(productData).length);
+        },
+    })
+}
+
 
 $(document).ready(function() {
     fetchUserDetails();
     fetchProducts();
+    fetchOrders();
+    fetchCompletedOrders();
 });
