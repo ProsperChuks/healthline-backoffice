@@ -19,8 +19,8 @@ function fetchUserDetails() {
         });
     } else {
         // Handle case where the user is not logged in
-        alert('User not logged in.');
-        window.location.href = 'index.html'
+        // alert('User not logged in.');
+        // window.location.href = 'index.html'
     }
 }
 
@@ -123,17 +123,31 @@ $(document).ready(function() {
                                             //   <!-- Your admin message template here -->
                                             // `;
                                             $('.chat-inner').append(`
-                                            <div class="text-end" style="float: right !important;">
-                                                <p> ${message.text} <br><span>${message.sender.name} ${message.timestamp}</span> </p>
-                                            </div>`);
+                                                <div class='chatContainerLeft'>
+                                                    <div class='messageContainer'>
+                                                        <div class='message'>
+                                                            ${message.text}
+                                                        </div>
+                                                        <p>${message.timestamp}</p>
+                                                    </div>
+                                                </div>`);
                                           } else {
                                             // messageDiv = `
                                             //   <!-- Your customer message template here -->
                                             // `;
                                             $('.chat-inner').append(`
-                                            <div style="float: left !important;">
-                                                <p> ${message.text} <br><span>${message.sender.name} ${message.timestamp}</span></p>
-                                            </div>`);
+                                                <div class='chatContainer'>
+                                                    <div class='userImage'>
+                                                        ${message.sender.name[0]}
+                                                    </div>
+                                                    <div class='messageContainer'>
+                                                        <div class='message'>
+                                                            ${message.text}
+                                                        </div>
+                                                        <p>${message.timestamp}</p>
+                                                    </div>
+                                                </div>`
+                                            );
                                           }
                                             
                                           // Append the message div to the room container
