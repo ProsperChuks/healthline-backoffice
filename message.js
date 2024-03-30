@@ -19,8 +19,8 @@ function fetchUserDetails() {
         });
     } else {
         // Handle case where the user is not logged in
-        // alert('User not logged in.');
-        // window.location.href = 'index.html'
+        alert('User not logged in.');
+        window.location.href = 'index.html'
     }
 }
 
