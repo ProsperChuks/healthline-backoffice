@@ -25,7 +25,6 @@
         line-height: 1.15;
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
-
       }
     </style>
     <link
@@ -275,11 +274,15 @@
           transform: rotate(90deg);
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./message.js"></script>
     <div>
       <link href="./message.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./chatComponent.css">
 
       <div class="message-container">
         <div class="message-dashboard">
@@ -454,7 +457,7 @@
                   />
                 </div>
                 <span class="message-text012">
-                  <span>&nbsp; Anthony&nbsp;&nbsp;</span>
+                  <span>&nbsp;<span data-username style="text-transform: capitalize;">loading... </span>&nbsp;&nbsp;</span>
                   <br />
                 </span>
                 <div
@@ -510,7 +513,7 @@
           <div class="message-frame1171276819">
             <div class="message-frame1171276800">
               <span class="message-text017">
-                <span>Welcome Back, Anthony</span>
+                <span>Welcome Back,<span data-username style="text-transform: capitalize;">loading...</span> </span>
               </span>
             </div>
           </div>
@@ -552,6 +555,9 @@
                 class="message-more"
               />
             </div>
+            <br><br>
+            <div class="container mt-3 chat-inner">
+            </div>
             <div class="message-frame1171275852">
               <div class="message-frame1171275855">
                 <div class="message-circularbtn image-upload">
@@ -576,81 +582,8 @@
                 <span class="message-text031"><span>Send</span></span>
               </button>
             </div>
-            <div class="message-personchat1">
-              <div class="message-frame1171276863">
-                <span class="message-text033">R</span>
-              </div>
-              <div class="message-frame1171275849">
-                <div class="message-frame1171275847">
-                  <span class="message-text034">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
-                      sit pretium blandit. Lorem ipsum dolor sit amet
-                      consectetur.
-                    </span>
-                  </span>
-                </div>
-                <span class="message-text036"><span>2 min</span></span>
-              </div>
-            </div>
-            <div class="message-personchat2">
-              <div class="message-frame11712768631">
-                <span class="message-text038">R</span>
-              </div>
-              <div class="message-frame11712758491">
-                <div class="message-frame11712758471">
-                  <span class="message-text039">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur. Amet amet
-                    </span>
-                  </span>
-                </div>
-                <span class="message-text041"><span>2 min</span></span>
-              </div>
-            </div>
-            <div class="message-frame11712758492">
-              <div class="message-frame11712758493">
-                <div class="message-frame11712758472">
-                  <span class="message-text043">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
-                      sit pretium blandit. Lorem ipsum dolor sit amet
-                      consectetur.
-                    </span>
-                  </span>
-                </div>
-                <span class="message-text045"><span>2 min</span></span>
-              </div>
-            </div>
-            <div class="message-frame1171275853">
-              <div class="message-frame11712758494">
-                <div class="message-frame11712758473">
-                  <span class="message-text047">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur. Amet amet tortor
-                      sit pretium blandit. Lorem ipsum dolor sit amet
-                      consectetur.
-                    </span>
-                  </span>
-                </div>
-                <span class="message-text049"><span>2 min</span></span>
-              </div>
-            </div>
-            <div class="message-group1171275066">
-              <img
-                alt="Line1963463"
-                src="public/external/line1963463-m3e.svg"
-                class="message-line196"
-              />
-              <span class="message-text051"><span>Today</span></span>
-              <img
-                alt="Line1973463"
-                src="public/external/line1973463-cw2i.svg"
-                class="message-line197"
-              />
-            </div>
           </div>
-          <div class="message-frame11712758531">
+          <div class="message-frame11712758531" style="overflow-y: auto !important; overflow-x:hidden; max-height: 100vh !important;">
             <div class="message-frame1171275845">
               <img
                 alt="Rectangle205991I346"
@@ -985,5 +918,16 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+      .message-frame11712758531::-webkit-scrollbar { 
+          display: none;  /* Safari and Chrome */
+      }
+      .chat-inner {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    </style>
   </body>
 </html>
