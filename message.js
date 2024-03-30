@@ -24,6 +24,11 @@ function fetchUserDetails() {
     }
 }
 
+function formatTimestamp(timestampString) {
+    const date = new Date(timestampString);
+    return date.toLocaleString(); // Basic formatting
+}
+
 $(document).ready(function() {
     fetchUserDetails();
 
@@ -58,8 +63,6 @@ $(document).ready(function() {
                             },
                             success: function(res){
                                 let last_message = res.slice(-1)[0];
-                                const messageTimestamp = new Date(last_message.timestamp);
-                                const now = new Date();
                                 
                                 const sessionDiv = `
                                     <div id="room${index}" class="message-frame11712758461" style="cursor: pointer;">
@@ -83,7 +86,7 @@ $(document).ready(function() {
                                                 <span class="message-text062">
                                                 <span style="text-transform: capitalize;">${cust_name}</span>
                                                 </span>
-                                                <span class="message-text064"><span>2 min</span></span>
+                                                <span class="message-text064"><span>${formatTimestamp(last_message.timestamp)}</span></span>
                                             </div>
                                             <span class="message-text066">
                                                 <span class="d-inline-block text-truncate" style="max-width: 200px;">${last_message.text}</span>
@@ -123,12 +126,25 @@ $(document).ready(function() {
                                             //   <!-- Your admin message template here -->
                                             // `;
                                             $('.chat-inner').append(`
+                                                <div class="message-frame1171275843">
+                                                    <div class="message-frame1171275844">
+                                                    <div class="message-frame1171275846">
+                                                        <span class="message-text025">${cust_name[0]}</span>
+                                                    </div>
+                                                    <div class="message-frame11712750501">
+                                                        <span class="message-text026">
+                                                        <span>${cust_name}</span>
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                    <img alt="more3463" src="public/external/more3463-cksp.svg" class="message-more" />
+                                                </div>
                                                 <div class='chatContainerLeft'>
                                                     <div class='messageContainer'>
                                                         <div class='message'>
                                                             ${message.text}
                                                         </div>
-                                                        <p>${message.timestamp}</p>
+                                                        <p>${formatTimestamp(message.timestamp)}</p>
                                                     </div>
                                                 </div>`);
                                           } else {
@@ -144,16 +160,19 @@ $(document).ready(function() {
                                                         <div class='message'>
                                                             ${message.text}
                                                         </div>
-                                                        <p>${message.timestamp}</p>
+                                                        <p>${formatTimestamp(message.timestamp)}</p>
                                                     </div>
                                                 </div>`
                                             );
                                           }
-                                            
-                                          // Append the message div to the room container
-                                        //   $('.room').append(messageDiv);
-                                          });
-                                        }
+                                          $('#send_text').submit(function(event) {
+                                            event.preventDefault(); // Prevent default form submission
+  
+                                            const message = $(this).find('textarea[class="textfocus"]').val();
+                                            alert(message);
+                                        })
+                                      });
+                                    }
                                     });                                
                                 });
                             }
