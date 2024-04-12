@@ -339,21 +339,13 @@
           <br><br>
           <div class="container mt-3 chat-inner">
           </div>
-          <form class="message-frame1171275852" id="send_text">
-            <div class="message-frame1171275855">
-              <div>
-                <textarea placeholder="Your Message..." class="textfocus"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="message-button">
-              <span class="message-text031"><span>Send</span></span>
-            </button>
-          </form>
         </div>
         <div class="message-frame11712758531" style="overflow-y: auto !important; overflow-x:hidden; max-height: 100vh !important;">
-          <div style="margin: 10rem;" class="spinner-border text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
+          <div class="requests" style="border-bottom: 1px solid #343434;">
           </div>
+          <!-- <div style="margin: 10rem;" class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
         </div>
         <div class="message-frame1171275824">
           <div class="message-container1">
@@ -442,6 +434,40 @@
 
     .chatContainerLeft .messageContainer p {
       text-align: right !important;
+    }
+
+    .friend img{
+      width:40px;
+      border-radius:50%;
+      margin:15px;
+      float:left;
+    }
+    .friend p{
+      padding:15px 0 0 0;     
+      float:left;
+      width:220px;
+    }
+    .friend p strong{
+      font-weight:600;
+      font-size:15px;
+      color:#597a96;  
+
+    }
+    .friend p span{
+      font-size:13px;
+      font-weight:400;
+      color:#aab8c2;
+    }
+    .but{
+      border: 1px solid; 
+      border-radius: 35px;
+    }
+    .but.red{
+      background-color: rgba(255, 0, 0, 0.486);
+      margin-bottom: 4px;
+    }
+    .but.green{
+      background-color: rgba(0, 128, 0, 0.488);
     }
   </style>
 </body>

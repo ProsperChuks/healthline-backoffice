@@ -1,5 +1,6 @@
 const token = localStorage.getItem('token');
 const user = localStorage.getItem('userid');
+let uid = 0;
 
 function fetchUserDetails() {
     var endpoint = 'https://prosperc40.pythonanywhere.com/users/'+user
@@ -11,6 +12,7 @@ function fetchUserDetails() {
             },
             success: function(userData) {
                 $('[data-username]').text(userData.username);
+                uid = userData.id;
             },
             error: function() {
                 alert('Failed to Load User Data!')
@@ -22,6 +24,46 @@ function fetchUserDetails() {
         alert('User not logged in.');
         window.location.href = 'index.html'
     }
+}
+
+function acceptRequest(id) {
+    var endpoint = `https://prosperc40.pythonanywhere.com/chat-requests/`+id;
+    $.ajax({
+        type : 'PATCH',
+        url: endpoint,
+        data : {'status': 'a'},
+        headers: {
+            'Authorization': 'Token ' + token 
+        },
+        success: function(response) {
+            console.log(response);
+            location.reload();
+        },
+        error: function(error) {
+            console.log(error);
+            location.reload();
+        }
+    });
+}
+
+function rejectRequest(id) {
+    var endpoint = `https://prosperc40.pythonanywhere.com/chat-requests/`+id;
+    $.ajax({
+        type : 'PATCH',
+        url: endpoint,
+        data : {'status': 'r'},
+        headers: {
+            'Authorization': 'Token ' + token 
+        },
+        success: function(response) {
+            console.log(response);
+            location.reload();
+        },
+        error: function(error) {
+            console.log(error);
+            location.reload();
+        }
+    });
 }
 
 function formatTimestamp(timestampString) {
@@ -44,7 +86,43 @@ $(document).ready(function() {
         success: function(chats) {
             
             const chatListContainer = $('.message-frame11712758531'); 
-            chatListContainer.empty(); // Clear existing chats before displaying
+            const chatlistrequest = $('.requests');
+            // chatListContainer.empty();
+            chatlistrequest.empty();
+            chatlistrequest.append("<h6>New Chat Requests</h6>");
+
+            var endpoint = 'https://prosperc40.pythonanywhere.com/chat-requests?status=p'
+            $.ajax({
+                url: endpoint,
+                headers: {
+                    'Authorization': 'Token ' + token 
+                },
+                success: function(response) {
+                    response.forEach(function(chatRequest, index) {
+                        // Create a new div for the chat request
+                        const chatRequestDiv = `                         
+                            <div class="friend row" style="cursor: pointer;">
+                                <div class="col-10">    
+                                    <img src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=" />
+                                    <p>
+                                        <strong>${chatRequest.customer.name}</strong><br>
+                                        <span>${chatRequest.message}</span>
+                                    </p>
+                                </div>
+                                <div class="col-2 button-container">
+                                    <button class="but red" onclick="rejectRequest(${chatRequest.id})">&#10005;</button>
+                                    <button class="but green" onclick="acceptRequest(${chatRequest.id})">&#10003;</button>
+                                </div>
+                            </div>`
+                    
+                        // Append the chat request div to the main div
+                        chatlistrequest.append(chatRequestDiv);
+                    });
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
             
             chats.forEach((chat, index) => {
                 let cust_name = '';
@@ -146,7 +224,17 @@ $(document).ready(function() {
                                                         </div>
                                                         <p>${formatTimestamp(message.timestamp)}</p>
                                                     </div>
-                                                </div>`);
+                                                </div>
+                                                <form class="message-frame1171275852" id="send_text" data-session="${message.session}">
+                                                    <div class="message-frame1171275855">
+                                                    <div>
+                                                        <textarea placeholder="Your Message..." class="textfocus"></textarea>
+                                                    </div>
+                                                    </div>
+                                                    <button type="submit" class="message-button">
+                                                    <span class="message-text031"><span>Send</span></span>
+                                                    </button>
+                                                </form>`);
                                           } else {
                                             // messageDiv = `
                                             //   <!-- Your customer message template here -->
@@ -162,18 +250,22 @@ $(document).ready(function() {
                                                         </div>
                                                         <p>${formatTimestamp(message.timestamp)}</p>
                                                     </div>
-                                                </div>`
+                                                </div>
+                                                <form class="message-frame1171275852" id="send_text" data-session="${message.session}">
+                                                    <div class="message-frame1171275855">
+                                                    <div>
+                                                        <textarea placeholder="Your Message..." class="textfocus"></textarea>
+                                                    </div>
+                                                    </div>
+                                                    <button type="submit" class="message-button">
+                                                    <span class="message-text031"><span>Send</span></span>
+                                                    </button>
+                                                </form>`
                                             );
                                           }
-                                          $('#send_text').submit(function(event) {
-                                            event.preventDefault(); // Prevent default form submission
-  
-                                            const message = $(this).find('textarea[class="textfocus"]').val();
-                                            alert(message);
-                                        })
                                       });
                                     }
-                                    });                                
+                                    });                               
                                 });
                             }
                         });
@@ -181,5 +273,39 @@ $(document).ready(function() {
                 })
             });
         }, 
+    });
+    $(document).on('submit', '#send_text', function(e) {
+        e.preventDefault();  // Prevent the form from being submitted normally                                        
+        var messagen = $(this).find('.textfocus').val();
+        var session = $(this).data('session');
+        var endpoint = 'https://prosperc40.pythonanywhere.com/chat-messages'                         
+        
+        // You can add your AJAX call or other code here to send the message
+        const formData = new FormData();
+        formData.append('text', messagen); 
+        formData.append('content_type', '9');
+        formData.append('object_id', uid.toString());
+        formData.append('session', session.toString());
+
+        $.ajax({
+            url: endpoint,
+            type : 'POST',
+            data : formData,
+            headers: {
+                'Authorization': 'Token ' + token,
+            },
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                console.log(response);
+                location.reload();
+            },
+            error: function(error) {
+                console.log(error);
+                location.reload();
+            }
+        });
+
+        $('.textfocus').val('');  // Clear the textarea
     });
 });
