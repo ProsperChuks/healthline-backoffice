@@ -276,6 +276,7 @@
         }
     </style>
     <script src="https://kit.fontawesome.com/9486557a14.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -407,7 +408,7 @@
                   <span class="dashboard-text005"><span>Messages</span></span>
                 </div>
               </a>
-              <a href="blog.html" class="dashboard-navlink04">
+              <!-- <a href="blog.html" class="dashboard-navlink04">
                 <div class="dashboard-frame1171275053">
                   <img
                     alt="jamwriteI310"
@@ -416,7 +417,7 @@
                   />
                   <span class="dashboard-text007"><span>Blog</span></span>
                 </div>
-              </a>
+              </a> -->
               <a href="settings.html" class="dashboard-navlink05">
                 <div class="dashboard-frame1171275054">
                   <img
@@ -558,7 +559,7 @@
                 <div class="dashboard-frame1171276850">
                   <div class="dashboard-box">
                     <div class="dashboard-vuesaxboldbox">
-                      <i class="fa-solid fa-cube dashboard-vector15" style="font-size: 17px;"></i>
+                      <i class="fa-solid fa-cube dashboard-vector15 text-dark" style="font-size: 17px;"></i>
                     </div>
                   </div>
                 </div>
@@ -585,7 +586,7 @@
                   <div class="dashboard-bag24">
                     <div class="dashboard-vuesaxboldbag2">
                       <div class="dashboard-bag25">
-                        <i class="fa-solid fa-bag-shopping dashboard-vector24" style="font-size: 17px;"></i>
+                        <i class="fa-solid fa-bag-shopping dashboard-vector24 text-dark" style="font-size: 17px;"></i>
                       </div>
                     </div>
                   </div>
@@ -596,7 +597,7 @@
               <span class="dashboard-text036">
                 <span>Cancelled Orders</span>
               </span>
-              <span class="dashboard-text038"><span>0</span></span>
+              <span class="dashboard-text038"><span num-can-orders>000</span></span>
               <div class="dashboard-frame11712768503">
                 <div class="dashboard-bagcross">
                   <div class="dashboard-vuesaxboldbagcross">
@@ -756,7 +757,7 @@
               <div class="dashboard-frame1171276870">
                 <div class="dashboard-frame1171276851">
                   <span class="dashboard-text075"><span>New Orders</span></span>
-                  <span class="dashboard-text077"><span>View All</span></span>
+                  <span class="dashboard-text077"><a href="orders.html" class="text-success">View All</a></span>
                 </div>
               </div>
               <div class="dashboard-frame1171276846">
@@ -952,8 +953,8 @@
           <div class="dashboard-frame1171276848">
             <div class="dashboard-frame1171276876">
               <span class="dashboard-text135"><span>New Messages</span></span>
-              <span class="dashboard-text137">2</span>
-              <a href="message.html" class="dashboard-text138">
+              <span class="dashboard-text137" new-messages>-</span>
+              <a href="message.html" class="text-success dashboard-text138">
                 <span>View all</span>
               </a>
             </div>
@@ -961,5 +962,6 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>

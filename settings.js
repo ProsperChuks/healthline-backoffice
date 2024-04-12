@@ -57,6 +57,25 @@ $(document).ready(function() {
             }
         });
     });
+    
+    $('#delete').click(function() {
+        $.ajax({
+          url: `https://prosperc40.pythonanywhere.com/user/${user}`,
+          type: "DELETE",
+          headers: {
+            'Authorization': 'Token ' + token
+          },
+          success: function() {
+            localStorage.removeItem('token');
+            localStorage.removeItem('userid');
+            window.location.href = 'index.html'
+          },
+          error: function(error) {
+            // Error handling
+            console.error("DELETE failed:", error); 
+          }
+        });
+    });
 
     $('#logout').click(function() {
         $.ajax({
