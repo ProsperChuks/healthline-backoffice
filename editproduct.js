@@ -2,6 +2,7 @@ let params = new URLSearchParams(window.location.search);
 let id = params.get('id');
 
 if (id) {
+    document.getElementById('dele').style.display = 'block'
     let form = document.getElementById('addProduct');
     fetch('https://prosperc40.pythonanywhere.com/products/' + id)
     .then(response => response.json())
@@ -15,7 +16,7 @@ if (id) {
         document.getElementById('cate').value = product.category;
         document.getElementById('presen').value = product.presentation;
         document.getElementById('compos').value = product.composition;
-        document.getElementById('indica').value = product.indications.Indications;
+        document.getElementById('indica').value = product.indications;
     })
     .catch(error => console.error('Error:', error));
 
@@ -45,7 +46,7 @@ if (id) {
                 url: `https://prosperc40.pythonanywhere.com/products/${id}`,
                 method: "PUT",
                 headers: {
-                'Authorization': 'Token ' + token
+                    'Authorization': 'Token ' + token
                 },
                 data: formData2,
                 processData: false,
@@ -60,6 +61,23 @@ if (id) {
             });
         });
     });
+
+    document.getElementById('dele').addEventListener('click', function() {
+        $.ajax({
+            url: `https://prosperc40.pythonanywhere.com/products/${id}`,
+            method: "DELETE",
+            headers: {
+                'Authorization': 'Token ' + token
+            },
+            success: function(response) {
+                window.location.href = 'products.html'; 
+            },
+            error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling
+                console.log('Error: ', jqXHR, textStatus, errorThrown);
+                $('#resultMessage').html('Failed to Delete.');
+            }
+        });
+    })
 } else {
     isEditing = false;
     console.log('No ID present in the URL');

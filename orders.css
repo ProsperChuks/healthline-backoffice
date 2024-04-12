@@ -755,7 +755,7 @@
   border-color: #D9D9D9;
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius4);
-  margin-bottom: -73px;
+  margin-bottom: -145px;
   flex-direction: column;
   list-style-type: none;
   background-color: var(--dl-color-gray-white);
@@ -782,8 +782,8 @@
 }
 .orders-dropdown-toggle4:hover {
   fill: #fff;
-  color: #fff;
-  background-color: #595959;
+  color: #000;
+  background-color: inherit;
 }
 .orders-text024 {
   width: 100%;
@@ -814,8 +814,8 @@
 }
 .orders-dropdown-toggle5:hover {
   fill: #fff;
-  color: #fff;
-  background-color: #595959;
+  color: #000;
+  background-color: inherit;
 }
 .orders-text025 {
   width: 100%;
