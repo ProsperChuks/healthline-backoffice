@@ -24,12 +24,17 @@ function fetchUserDetails() {
     }
 }
 
+function gotoProduct(id) {
+    window.location.href = 'newproduct.html?id=' + id;
+}
+
 $(document).ready(function() {
     
     const pageSize = 10;
     let currentPage = 1;
 
     fetchUserDetails();
+    let form = document.getElementById('addProduct');
     
     var endpoint = 'https://prosperc40.pythonanywhere.com/products'
     $.ajax({
@@ -50,11 +55,16 @@ $(document).ready(function() {
                 paginatedProducts.forEach((product, index) => { 
                     const productDiv = `
                                 <div class="products-gallery-card${index}">
-                                    <img
-                                    alt="${product.drug_name}"
-                                    src="${product.image}"
-                                    class="products-image"
-                                    />
+                                    <div class="image-container">    
+                                        <img
+                                        alt="${product.drug_name}"
+                                        src="${product.image}"
+                                        class="products-image"
+                                        />
+                                        <div class="overlay">
+                                            <div class="icon" style="cursor: pointer;" onclick="gotoProduct(${product.id})">&#9998;&nbsp;Edit</div>
+                                        </div>
+                                    </div>
                                     <br>
                                     <div class="products-frame147">
                                     <div class="products-frame84">
@@ -173,43 +183,44 @@ $(document).ready(function() {
         }
     });
 
-    $('#addProduct').submit(function(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // data
-        const indications = $(this).find('textarea[name="indications"]').val();
-        const indicationsArray = indications.split(',').map(item => item.trim());
-        const formData = new FormData();
-
-        formData.append('image', $('#file-input')[0].files[0]); 
-        formData.append('drug_name', $(this).find('input[name="drug_name"]').val()); 
-        formData.append('drug_desc', $(this).find('textarea[name="desc"]').val());
-        formData.append('price', $(this).find('input[name="price"]').val());
-        formData.append('category', $(this).find('input[name="category"]').val());
-        formData.append('presentation', $(this).find('input[name="presentation"]').val());
-        formData.append('composition', $(this).find('textarea[name="composition"]').val());
-        formData.append('indications', JSON.stringify(indicationsArray));
-
-        // Send AJAX request
-        $.ajax({
-          url: "https://prosperc40.pythonanywhere.com/products",
-          method: "POST",
-          headers: {
-            'Authorization': 'Token ' + token
-            },
-          data: formData,
-          processData: false,
-          contentType: false,
-          beforeSend: function() {
-              console.log('Sending data:', formData);
-          },
-          success: function(response) {
-              window.location.href = 'products.html'; 
-          },
-          error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling
-              console.log('Error: ', jqXHR, textStatus, errorThrown);
-              $('#resultMessage').html('Failed to Upload.');
-          }
+    if (!id) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Call your function to send a POST request
+            const indications = $(this).find('textarea[name="indications"]').val();
+            const indicationsArray = indications.split(',').map(item => item.trim());
+            const formData = new FormData();
+    
+            formData.append('image', $('#file-input')[0].files[0]); 
+            formData.append('drug_name', $(this).find('input[name="drug_name"]').val()); 
+            formData.append('drug_desc', $(this).find('textarea[name="desc"]').val());
+            formData.append('price', $(this).find('input[name="price"]').val());
+            formData.append('category', $(this).find('input[name="category"]').val());
+            formData.append('presentation', $(this).find('input[name="presentation"]').val());
+            formData.append('composition', $(this).find('textarea[name="composition"]').val());
+            formData.append('indications', JSON.stringify(indicationsArray));
+    
+            // Send AJAX request
+            $.ajax({
+                url: `https://prosperc40.pythonanywhere.com/products`,
+                method: "POST",
+                headers: {
+                'Authorization': 'Token ' + token
+                },
+                data: formData,
+                processData: false,
+                contentType: false,
+                beforeSend: function() {
+                    console.log('Sending data:', formData);
+                },
+                success: function(response) {
+                    window.location.href = 'products.html'; 
+                },
+                error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling
+                    console.log('Error: ', jqXHR, textStatus, errorThrown);
+                    $('#resultMessage').html('Failed to Upload.');
+                }
+            });
         });
-      });
+    }
 });

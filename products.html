@@ -572,5 +572,45 @@
         </div>
       </div>
     </div>
+    <style>
+      /* .products-image:hover {
+          background-color: #00000069 !important;
+          border-radius: 100px !important;
+      } */
+      .image-container {
+        position: relative;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:  rgba(18, 18, 18, 0.5) !important;
+      }
+
+      .image-container:hover .overlay {
+        opacity: 1;
+      }
+
+      .icon {
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 66px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        width: 110px;
+        height: 46px;
+      }
+    </style>
   </body>
 </html>
