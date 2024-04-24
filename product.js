@@ -30,7 +30,7 @@ function gotoProduct(id) {
 
 $(document).ready(function() {
     
-    const pageSize = 10;
+    const pageSize = 9;
     let currentPage = 1;
 
     fetchUserDetails();
@@ -197,7 +197,7 @@ $(document).ready(function() {
             formData.append('price', $(this).find('input[name="price"]').val());
             formData.append('category', $(this).find('input[name="category"]').val());
             formData.append('presentation', $(this).find('input[name="presentation"]').val());
-            formData.append('composition', $(this).find('textarea[name="composition"]').val());
+            formData.append('composition', document.getElementById("compos").value);
             formData.append('indications', JSON.stringify(indicationsArray));
     
             // Send AJAX request
@@ -214,6 +214,7 @@ $(document).ready(function() {
                     console.log('Sending data:', formData);
                 },
                 success: function(response) {
+                    alert('Product Added Successfully!');
                     window.location.href = 'products.html'; 
                 },
                 error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling

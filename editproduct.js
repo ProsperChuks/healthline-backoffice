@@ -38,7 +38,7 @@ if (id) {
             formData2.append('price', $(this).find('input[name="price"]').val());
             formData2.append('category', $(this).find('input[name="category"]').val());
             formData2.append('presentation', $(this).find('input[name="presentation"]').val());
-            formData2.append('composition', $(this).find('textarea[name="composition"]').val());
+            formData2.append('composition', document.getElementById("compos").value);
             formData2.append('indications', JSON.stringify(indicationsArray));
 
             // Send AJAX request
@@ -52,6 +52,7 @@ if (id) {
                 processData: false,
                 contentType: false,
                 success: function(response) {
+                    alert('Product Changed Successfully!');
                     window.location.href = 'products.html'; 
                 },
                 error: function(jqXHR, textStatus, errorThrown) { // Enhanced error handling

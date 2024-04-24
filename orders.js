@@ -60,7 +60,7 @@ $(document).ready(function() {
                             </div>
                             <div class="orders-frame117127680401">
                             <span class="orders-text050">
-                                <span>${order.email}</span>
+                                <span class="d-inline-block text-truncate" style="max-width: 100px !important;">${order.email}</span>
                             </span>
                             </div>
                             <div class="orders-frame1171276814">
@@ -295,7 +295,7 @@ $(document).ready(function() {
                               <div class="orders-frame117127680801">
                                   <div class="orders-frame117127680301">
                                   <span class="orders-text048">
-                                      <span>${order.name}</span>
+                                      <span class="d-inline-block text-truncate" style="max-width: 100px !important;">${order.name}</span>
                                   </span>
                                   </div>
                                   <div class="orders-frame117127680401">
@@ -543,7 +543,7 @@ $(document).ready(function() {
                                   </div>
                                   <div class="orders-frame117127680401">
                                   <span class="orders-text050">
-                                      <span>${order.email}</span>
+                                      <span class="d-inline-block text-truncate" style="max-width: 100px !important;">${order.email}</span>
                                   </span>
                                   </div>
                                   <div class="orders-frame1171276814">
@@ -732,7 +732,7 @@ $(document).ready(function() {
                                   </div>
                                   <div class="orders-frame117127680401">
                                   <span class="orders-text050">
-                                      <span>${order.email}</span>
+                                      <span class="d-inline-block text-truncate" style="max-width: 100px !important;">${order.email}</span>
                                   </span>
                                   </div>
                                   <div class="orders-frame1171276814">

@@ -144,11 +144,6 @@ $(document).ready(function() {
                                 
                                 const sessionDiv = `
                                     <div id="room${index}" class="message-frame11712758461" style="cursor: pointer;">
-                                        <img
-                                        alt="moreI346"
-                                        src="public/external/morei346-obec.svg"
-                                        class="message-more2"
-                                        />
                                         <div class="message-frame11712758442">
                                         <div class="message-frame11712768611">
                                             <img
@@ -171,12 +166,12 @@ $(document).ready(function() {
                                             </span>
                                             </div>
                                             <div class="message-group11712749281">
-                                            <img
-                                                alt="Ellipse3680I346"
-                                                src="public/external/ellipse3680i346-o7s-200h.png"
-                                                class="message-ellipse36801"
-                                            />
-                                            <span class="message-text068">3</span>
+                                                <img
+                                                    alt="Ellipse3680I346"
+                                                    src="public/external/ellipse3680i346-o7s-200h.png"
+                                                    class="message-ellipse36801"
+                                                />
+                                                <span class="message-text068">3</span>
                                             </div>
                                         </div>
                                         </div>
@@ -215,7 +210,12 @@ $(document).ready(function() {
                                                         </span>
                                                     </div>
                                                     </div>
-                                                    <img alt="more3463" src="public/external/more3463-cksp.svg" class="message-more" />
+                                                    <span class="dropdown4">
+                                                        <img alt="more3463" src="public/external/more3463-cksp.svg" class="message-more" />
+                                                        <div id="myDropdown" class="dropdown-content4">
+                                                            <p id="del_sel" data-session="${message.session}" style="margin-bottom: 0 !important;">Delete</p>
+                                                        </div>
+                                                    </span>
                                                 </div>
                                                 <div class='chatContainerLeft'>
                                                     <div class='messageContainer'>
@@ -240,6 +240,24 @@ $(document).ready(function() {
                                             //   <!-- Your customer message template here -->
                                             // `;
                                             $('.chat-inner').append(`
+                                                <div class="message-frame1171275843">
+                                                    <div class="message-frame1171275844">
+                                                    <div class="message-frame1171275846">
+                                                        <span class="message-text025">${cust_name[0]}</span>
+                                                    </div>
+                                                    <div class="message-frame11712750501">
+                                                        <span class="message-text026">
+                                                        <span>${cust_name}</span>
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                    <span class="dropdown4">
+                                                        <img alt="more3463" src="public/external/more3463-cksp.svg" class="message-more" />
+                                                        <div id="myDropdown" class="dropdown-content4">
+                                                            <p id="del_sel" data-session="${message.session}" style="margin-bottom: 0 !important;">Delete</p>
+                                                        </div>
+                                                    </span>
+                                                </div>
                                                 <div class='chatContainer'>
                                                     <div class='userImage'>
                                                         ${message.sender.name[0]}
@@ -273,6 +291,27 @@ $(document).ready(function() {
                 })
             });
         }, 
+    });
+    $(document).on('click', '#del_sel', function() {
+        var session = $(this).data('session');
+        var endpoint = `https://prosperc40.pythonanywhere.com/chat-sessions/${session}`
+
+        $.ajax({
+            url: endpoint,
+            type : 'DELETE',
+            headers: {
+                'Authorization': 'Token ' + token,
+            },
+            success: function(response) {
+                console.log(response);
+                location.reload();
+            },
+            error: function(error) {
+                console.log(error);
+                location.reload();
+            }
+        });
+
     });
     $(document).on('submit', '#send_text', function(e) {
         e.preventDefault();  // Prevent the form from being submitted normally                                        
