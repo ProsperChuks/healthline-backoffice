@@ -60,7 +60,7 @@ $(document).ready(function() {
     
     $('#delete').click(function() {
         $.ajax({
-          url: `https://prosperc40.pythonanywhere.com/user/${user}`,
+          url: `https://prosperc40.pythonanywhere.com/users/${user}`,
           type: "DELETE",
           headers: {
             'Authorization': 'Token ' + token
