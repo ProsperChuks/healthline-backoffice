@@ -13,7 +13,7 @@ $(document).ready(function() {
   
       // Send AJAX request
       $.ajax({
-        url: "https://prosperc40.pythonanywhere.com/api/login/",
+        url: "https://healthlineng.pythonanywhere.com/api/login/",
         method: "POST",
         contentType: "application/json",
         data: "{\"username\":\""+email+"\", \"password\":\""+password+"\"}",

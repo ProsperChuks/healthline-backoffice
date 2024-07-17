@@ -4,7 +4,7 @@ let id = params.get('id');
 if (id) {
     document.getElementById('dele').style.display = 'block'
     let form = document.getElementById('addProduct');
-    fetch('https://prosperc40.pythonanywhere.com/products/' + id)
+    fetch('https://healthlineng.pythonanywhere.com/products/' + id)
     .then(response => response.json())
     .then(product => {
         console.log(product.indications);
@@ -43,7 +43,7 @@ if (id) {
 
             // Send AJAX request
             $.ajax({
-                url: `https://prosperc40.pythonanywhere.com/products/${id}`,
+                url: `https://healthlineng.pythonanywhere.com/products/${id}`,
                 method: "PUT",
                 headers: {
                     'Authorization': 'Token ' + token
@@ -65,7 +65,7 @@ if (id) {
 
     document.getElementById('dele').addEventListener('click', function() {
         $.ajax({
-            url: `https://prosperc40.pythonanywhere.com/products/${id}`,
+            url: `https://healthlineng.pythonanywhere.com/products/${id}`,
             method: "DELETE",
             headers: {
                 'Authorization': 'Token ' + token

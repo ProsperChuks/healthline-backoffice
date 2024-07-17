@@ -2,7 +2,7 @@ const token = localStorage.getItem('token');
 const user = localStorage.getItem('userid');
 
 function fetchUserDetails() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/users/'+user
+    var endpoint = 'https://healthlineng.pythonanywhere.com/users/'+user
     if (token) {
         $.ajax({
             url: endpoint, // Your backend endpoint
@@ -36,7 +36,7 @@ $(document).ready(function() {
     fetchUserDetails();
     let form = document.getElementById('addProduct');
     
-    var endpoint = 'https://prosperc40.pythonanywhere.com/products'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/products'
     $.ajax({
         url: endpoint,
         headers: {
@@ -133,7 +133,7 @@ $(document).ready(function() {
                 // Only perform AJAX call if the search term is long enough
                 if (searchTerm.length >= 3) { 
                   $.ajax({
-                    url: `https://prosperc40.pythonanywhere.com/products?items=${searchTerm}`, // search endpoint
+                    url: `https://healthlineng.pythonanywhere.com/products?items=${searchTerm}`, // search endpoint
                     headers: {
                       'Authorization': 'Token ' + token
                     },
@@ -202,7 +202,7 @@ $(document).ready(function() {
     
             // Send AJAX request
             $.ajax({
-                url: `https://prosperc40.pythonanywhere.com/products`,
+                url: `https://healthlineng.pythonanywhere.com/products`,
                 method: "POST",
                 headers: {
                 'Authorization': 'Token ' + token

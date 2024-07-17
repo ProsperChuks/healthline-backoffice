@@ -3,7 +3,7 @@ const user = localStorage.getItem('userid');
 let uid = 0;
 
 function fetchUserDetails() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/users/'+user
+    var endpoint = 'https://healthlineng.pythonanywhere.com/users/'+user
     if (token) {
         $.ajax({
             url: endpoint, // Your backend endpoint
@@ -27,7 +27,7 @@ function fetchUserDetails() {
 }
 
 function acceptRequest(id) {
-    var endpoint = `https://prosperc40.pythonanywhere.com/chat-requests/`+id;
+    var endpoint = `https://healthlineng.pythonanywhere.com/chat-requests/`+id;
     $.ajax({
         type : 'PATCH',
         url: endpoint,
@@ -47,7 +47,7 @@ function acceptRequest(id) {
 }
 
 function rejectRequest(id) {
-    var endpoint = `https://prosperc40.pythonanywhere.com/chat-requests/`+id;
+    var endpoint = `https://healthlineng.pythonanywhere.com/chat-requests/`+id;
     $.ajax({
         type : 'PATCH',
         url: endpoint,
@@ -74,9 +74,9 @@ function formatTimestamp(timestampString) {
 $(document).ready(function() {
     fetchUserDetails();
 
-    var customer_endpoint = 'https://prosperc40.pythonanywhere.com/customers';
-    var session_endpoint = 'https://prosperc40.pythonanywhere.com/chat-sessions';
-    var messages_endpoint = 'https://prosperc40.pythonanywhere.com/chat-messages';
+    var customer_endpoint = 'https://healthlineng.pythonanywhere.com/customers';
+    var session_endpoint = 'https://healthlineng.pythonanywhere.com/chat-sessions';
+    var messages_endpoint = 'https://healthlineng.pythonanywhere.com/chat-messages';
 
     $.ajax({
         url: session_endpoint,
@@ -91,7 +91,7 @@ $(document).ready(function() {
             chatlistrequest.empty();
             chatlistrequest.append("<h6>New Chat Requests</h6>");
 
-            var endpoint = 'https://prosperc40.pythonanywhere.com/chat-requests?status=p'
+            var endpoint = 'https://healthlineng.pythonanywhere.com/chat-requests?status=p'
             $.ajax({
                 url: endpoint,
                 headers: {
@@ -294,7 +294,7 @@ $(document).ready(function() {
     });
     $(document).on('click', '#del_sel', function() {
         var session = $(this).data('session');
-        var endpoint = `https://prosperc40.pythonanywhere.com/chat-sessions/${session}`
+        var endpoint = `https://healthlineng.pythonanywhere.com/chat-sessions/${session}`
 
         $.ajax({
             url: endpoint,
@@ -317,7 +317,7 @@ $(document).ready(function() {
         e.preventDefault();  // Prevent the form from being submitted normally                                        
         var messagen = $(this).find('.textfocus').val();
         var session = $(this).data('session');
-        var endpoint = 'https://prosperc40.pythonanywhere.com/chat-messages'                         
+        var endpoint = 'https://healthlineng.pythonanywhere.com/chat-messages'                         
         
         // You can add your AJAX call or other code here to send the message
         const formData = new FormData();

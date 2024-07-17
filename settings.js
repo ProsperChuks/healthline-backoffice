@@ -2,7 +2,7 @@ const token = localStorage.getItem('token');
 const user = localStorage.getItem('userid');
 
 function fetchUserDetails() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/users/'+user
+    var endpoint = 'https://healthlineng.pythonanywhere.com/users/'+user
     if (token) {
         $.ajax({
             url: endpoint, // Your backend endpoint
@@ -40,7 +40,7 @@ $(document).ready(function() {
         const new_pass = $(this).find('input[name="new_password"]').val();
 
         $.ajax({
-            url: "https://prosperc40.pythonanywhere.com/api/change-password/",
+            url: "https://healthlineng.pythonanywhere.com/api/change-password/",
             type: "PUT",
             headers: {
                 'Authorization': 'Token ' + token
@@ -60,7 +60,7 @@ $(document).ready(function() {
     
     $('#delete').click(function() {
         $.ajax({
-          url: `https://prosperc40.pythonanywhere.com/users/${user}`,
+          url: `https://healthlineng.pythonanywhere.com/users/${user}`,
           type: "DELETE",
           headers: {
             'Authorization': 'Token ' + token
@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     $('#logout').click(function() {
         $.ajax({
-          url: `https://prosperc40.pythonanywhere.com/api/logout/`,
+          url: `https://healthlineng.pythonanywhere.com/api/logout/`,
           type: "POST",
           headers: {
             'Authorization': 'Token ' + token

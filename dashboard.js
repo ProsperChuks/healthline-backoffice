@@ -2,7 +2,7 @@ const token = localStorage.getItem('token');
 const user = localStorage.getItem('userid');
 
 function fetchUserDetails() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/users/'+user
+    var endpoint = 'https://healthlineng.pythonanywhere.com/users/'+user
     if (token) {
         $.ajax({
             url: endpoint, // Your backend endpoint
@@ -25,7 +25,7 @@ function fetchUserDetails() {
 }
 
 function fetchProducts() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/products'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/products'
     $.ajax({
         url: endpoint,
         headers: {
@@ -38,7 +38,7 @@ function fetchProducts() {
 }
 
 function fetchOrders() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/checkouts'
     $.ajax({
         url: endpoint,
         headers: {
@@ -51,7 +51,7 @@ function fetchOrders() {
 }
 
 function fetchCompletedOrders() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts?completed=1'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/checkouts?completed=1'
     $.ajax({
         url: endpoint,
         headers: {
@@ -64,7 +64,7 @@ function fetchCompletedOrders() {
 }
 
 function fetchCanceledOrders() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts?canceled=1'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/checkouts?canceled=1'
     $.ajax({
         url: endpoint,
         headers: {
@@ -77,7 +77,7 @@ function fetchCanceledOrders() {
 }
 
 function fetchNewMessages() {
-    var endpoint = 'https://prosperc40.pythonanywhere.com/chat-requests?status=p'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/chat-requests?status=p'
     $.ajax({
         url: endpoint,
         headers: {
@@ -98,7 +98,7 @@ $(document).ready(function() {
     fetchCanceledOrders();
     fetchNewMessages();
 
-    var endpoint = 'https://prosperc40.pythonanywhere.com/checkouts?completed=0'
+    var endpoint = 'https://healthlineng.pythonanywhere.com/checkouts?completed=0'
 
     $.ajax({
         url: endpoint,
@@ -182,7 +182,7 @@ $(document).ready(function() {
                     };
             
                     $.ajax({
-                      url: `https://prosperc40.pythonanywhere.com/checkouts/${order.id}`,
+                      url: `https://healthlineng.pythonanywhere.com/checkouts/${order.id}`,
                       type: "PATCH",
                       headers: {
                         'Authorization': 'Token ' + token
@@ -207,7 +207,7 @@ $(document).ready(function() {
                     };
             
                     $.ajax({
-                      url: `https://prosperc40.pythonanywhere.com/checkouts/${order.id}`,
+                      url: `https://healthlineng.pythonanywhere.com/checkouts/${order.id}`,
                       type: "PATCH",
                       headers: {
                         'Authorization': 'Token ' + token
